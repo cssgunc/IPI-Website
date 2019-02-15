@@ -8,15 +8,22 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-    <form method="POST" action="/add">
+    <form method="POST" action="/add" id="petitionForm">
        <input type="text" name="name" />
        <input type="email" name="email" />
+       Year: <select name="year">
+           <option value="2019">2019</option>
+           <option value="2020">2020</option>
+           <option value="2021">2021</option>
+           <option value="2022">2022</option>
+       </select>
+       <textarea rows="4" cols="50" name="comment" placeholder="Leave your comment here!" form="petitionForm"></textarea>
        <input type="submit" value="Submit!" />
     </form>
     <ul>
         {% for person in petition %}
         <li>
-            {{ person.name }}, {{ person.email }}
+            {{ person.name }}, {{ person.email }}, {{ person.year }}, {{ person.comment }}
         </li>
         {% endfor %}
     </ul>
