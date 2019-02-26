@@ -1,0 +1,103 @@
+.header {
+    text-align: center;
+    border: green 10px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 150px;
+}
+
+h1 {
+    text-align: center;
+    border: green 10px;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    display: block;
+    height: 100%;
+}
+
+
+p {
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    background-image: -webkit-radial-gradient(0.333);
+    padding-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0%;
+    height: 10%;
+}
+
+.container-2 {
+    display: inline-flex;
+
+}
+
+.backbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#course-det {
+    padding-top: 0.5px;
+    padding-bottom: 0px;
+}
+
+#back-button {
+
+    display: flex;
+}
+
+#submit-button {
+
+    display: flex;
+
+}
+
+#user-button {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+#map {
+    border: 10px;
+}
+
+input {
+    padding: 5px;
+    font-size: 12px;
+    width: 150px;
+    height: 20px;
+ }
+ 
+ button {
+    height: 30px;
+    width: 70px;
+    background: none; /* This removes the default background */
+    color: black;
+    border: 3px solid black;
+    border-radius: 50px; /* This gives our button rounded edges */
+    font-size: 12px;
+    cursor: pointer;
+ }
+ form {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
