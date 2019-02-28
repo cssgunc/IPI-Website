@@ -31,25 +31,41 @@ input {
     display: grid;
     max-width: 100%;
     max-height: 100%;
-    grid-template-columns: 100fr 1fr 1fr 200px;
+    grid-template-columns: 10fr 1fr 1fr 300px;
     grid-template-rows: 1fr 1fr 1fr 2fr;
     justify-items: center;
     grid-column-gap: 5px;
     grid-row-gap: 10px;
     background-color:black;
-    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     
 }
 
-tabler {
-    border: 1px solid white;
+#input-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0%;
+    height: 10%;
+}
+
+#fname-input, #lname-input, #submit-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: center;
+
 }
 
 .grid-container > div {
     background-color: darkred;
     color: #fff;
     border: 3px solid #fff;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
   }
 
@@ -66,7 +82,6 @@ tabler {
     grid-row: 2;
     background-color: darkcyan;
     border: 3px solid #fff;
-    padding: 20px;
     font-size:20px;
     text-align: center;
 }
@@ -78,6 +93,8 @@ tabler {
     border: 3px solid #fff;
     padding: 20px;
     font-size:20px;
+    max-width: 100%;
+    max-height: 100%;
     text-align: center;
 }
 
@@ -115,6 +132,9 @@ tabler {
  button {
     height: 50px;
     width: 100px;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
     background: white; /* This removes the default background */
     color: black;
     border: 3px solid black;
@@ -124,10 +144,11 @@ tabler {
  }
 
 
- form {
-    padding-top: 10px;
+form {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1%;
+    max-width: 100%;
+    max-height: 100%;
  }

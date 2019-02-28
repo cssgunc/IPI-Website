@@ -33,17 +33,22 @@
         <div class="sign-name">
             
                     <form id="name-form" input="text">
-                        <label for="first-name">Your First Name</label>
-                        <input class="first-name" type="text" id="fname-input" placeholder="First Name" required>
-                        <br />
-                        <label for="last-name">Your Last Name</label>
-                        <input class="last-name" type="text" id="lname-input" placeholder="Last Name" required>
-                        
-                        <label for="class-year"></label>
-                        
-                        <div class="submit_b">
-                            <button onclick="addName()" type="submit" class="submit-button" id="submit-name">Sign Your Name!</button>
+                        <div class="input-wrapper">
+                            <div class="fname-input">
+                                    <label for="first-name">Your First Name</label>
+                                    <input class="first-name" type="text"  placeholder="First Name" required>
+                            </div>
+                            <div class="lname-input">
+                                    <label for="last-name">Your Last Name</label>
+                                    <input class="last-name" type="text" placeholder="Last Name" required>
+                            </div>
+                            <div class="submit-input">
+                                    <div class="submit_b">
+                                            <button onclick="addName()" type="submit" class="submit-button" id="submit-name">Sign Your Name!</button>
+                                        </div>
+                            </div>
                         </div>
+                        
                     </form>
                 </div>
     </div>
