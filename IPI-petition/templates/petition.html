@@ -2,6 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Example Petition Title</title>
     
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -27,13 +29,20 @@
                 </div>
     </div>
     <div class="grid-sign">
-            <div class="sign-name">
-                    <p>Sign Your Name Below: </p>
+            <p>Sign Your Name Below: </p>
+        <div class="sign-name">
+            
                     <form id="name-form" input="text">
+                        <label for="first-name">Your First Name</label>
                         <input class="first-name" type="text" id="fname-input" placeholder="First Name" required>
+                        <br />
+                        <label for="last-name">Your Last Name</label>
                         <input class="last-name" type="text" id="lname-input" placeholder="Last Name" required>
+                        
+                        <label for="class-year"></label>
+                        
                         <div class="submit_b">
-                            <button onclick="addName()" type="submit" value="submit" class="submit-button" id="submit-name">Sign Your Name!</button>
+                            <button onclick="addName()" type="submit" class="submit-button" id="submit-name">Sign Your Name!</button>
                         </div>
                     </form>
                 </div>
