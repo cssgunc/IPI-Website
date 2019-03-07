@@ -13,14 +13,17 @@
 
 <div class="grid-container">
     <div class="grid-head">
-        <h1 class="header">Sign Our Petition!</h1>
+        <h1 class="header">Petition Title! - Sign Our Petition</h1>
     </div>
-    <div class="grid-side">Side-Bar</div>
-    <div class="grid-title">Petition-Title</div>
+    <div class="grid-side" style="width: 100%">People Who Have Signed!
+    <p id="side-bar-add"></p>
+    <ul class="add-list" id="add-to-list"></ul>
+    </div>
     <div class="grid-pic">Optional Pic</div>
     <div class="grid-desc">
             <div class="description-title">
                     <h2>Why We Care About This Cause: </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
                 <div class=description-body>
                         <p>
@@ -28,23 +31,24 @@
                         </p>
                 </div>
     </div>
-    <div class="grid-sign">
-            <p>Sign Your Name Below: </p>
+    <div class="grid-sign" style="width:100%">
+        <u><p>Sign Your Name Below</u>:</p>  
+        
         <div class="sign-name">
             
-                    <form id="name-form" input="text">
+                    <form id="name-form" input="text" onsubmit="addName(); return false;">
                         <div class="input-wrapper">
                             <div class="fname-input">
                                     <label for="first-name">Your First Name</label>
-                                    <input class="first-name" type="text"  placeholder="First Name" required>
+                                    <input class="first-name" id="first-name" type="text"  placeholder="First Name" required>
                             </div>
                             <div class="lname-input">
                                     <label for="last-name">Your Last Name</label>
-                                    <input class="last-name" type="text" placeholder="Last Name" required>
+                                    <input class="last-name" id="last-name" type="text" placeholder="Last Name" required>
                             </div>
                             <div class="submit-input">
                                     <div class="submit_b">
-                                            <button onclick="addName()" type="submit" class="submit-button" id="submit-name">Sign Your Name!</button>
+                                            <button type="submit" class="submit-button" id="submit-name">Sign Your Name!</button>
                                         </div>
                             </div>
                         </div>
@@ -63,7 +67,13 @@
 </body>
 <script>
     function addName() {
-        alert("Your Name Has Been Added! -  this is a test.");
+        let ul = document.getElementById("side-bar-add");
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(document.getElementById("first-name").value));
+        li.appendChild(document.createTextNode(" " + document.getElementById("last-name").value));
+        ul.appendChild(li);
+        document.getElementById("name-form").reset();
+    
     }
 </script>
 </html>
